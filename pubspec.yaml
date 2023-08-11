@@ -1,0 +1,21 @@
+name: xml_styled_text
+description: Straightforward xml based styling on Text widgets
+version: 0.0.1
+homepage: https://github.com/williamhjcho/xml_styled_text
+repository: https://github.com/williamhjcho/xml_styled_text
+issue_tracker: https://github.com/williamhjcho/xml_styled_text/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.7.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
