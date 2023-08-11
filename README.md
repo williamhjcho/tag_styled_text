@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-Straightforward xml based tag styling `Text` widget.
+Straightforward xml tag based (rich) styling on `Text` widgets
 
 ## Features
 
