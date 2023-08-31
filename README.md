@@ -1,5 +1,7 @@
 # xml_styled_text package
 
+[![build](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml/badge.svg)](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml)
+
 Straightforward xml tag based (rich) styling on `Text` widgets
 
 ## Getting started
