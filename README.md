@@ -1,4 +1,4 @@
-# xml_styled_text package
+# [xml_styled_text](https://pub.dev/packages/tag_styled_text) package
 
 [![build](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml/badge.svg)](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml) [![codecov](https://codecov.io/gh/williamhjcho/xml_styled_text/graph/badge.svg?token=9E7L28K3AV)](https://codecov.io/gh/williamhjcho/xml_styled_text)
 
