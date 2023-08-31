@@ -1,6 +1,6 @@
 # xml_styled_text package
 
-[![build](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml/badge.svg)](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml)
+[![build](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml/badge.svg)](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml) [![codecov](https://codecov.io/gh/williamhjcho/xml_styled_text/graph/badge.svg?token=9E7L28K3AV)](https://codecov.io/gh/williamhjcho/xml_styled_text)
 
 Straightforward xml tag based (rich) styling on `Text` widgets
 
