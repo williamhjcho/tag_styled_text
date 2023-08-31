@@ -234,7 +234,8 @@ void main() {
     '<a><b>text</x></y>',
   ]) {
     test('given malformed tags: "$input"', () {
-      // expect(() => buildSpan(input), throwsAssertionError);
+      final context = MockBuildContext();
+      expect(() => parseText(context, input, tags: {}), throwsAssertionError);
     });
   }
 
