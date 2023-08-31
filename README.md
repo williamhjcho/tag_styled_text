@@ -1,38 +1,69 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+# xml_styled_text package
 
 Straightforward xml tag based (rich) styling on `Text` widgets
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add this library to your pubspec.yaml file by either running
+
+`flutter pub add xml_styled_text`
+
+or by manually inserting
+
+```yaml
+#(...)
+dependencies:
+  xml_styled_text: ^<desired version here>
+#(...)
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+By itself, the package doesn't offer any default tags, you will have to add them
+yourself like so:
+
+> for a full showcase of functionalities take a look at the `example` app
 
 ```dart
-const like = 'sample';
+    // in your material app definition
+    MaterialApp(
+      // (...)
+      builder: (context, child) {
+        // inserting the application default tag styles here
+        return DefaultTagStyles(
+          tags: {
+            'bold': const TextSpanTag(
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            'italic': const TextSpanTag(
+              style: TextStyle(fontStyle: FontStyle.italic),
+            ),
+          },
+          child: child!,
+        );
+      },
+      // (...)
+    );
 ```
 
-## Additional information
+Then instead of using normally `Text` widgets, we would instead use:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+// simple tag usage
+TagStyledText('Some <bold>bold text</bold>!');
+
+// nested tag usage
+TagStyledText('Some <bold>bold and <italic>italic text</italic></bold>!');
+
+// if you need to add special tags only on specific instaces
+TagStyledText(
+  'Some text with <bold><special>a special text</special></bold>',
+  // tags here will be merged with any existing DefaultTagStyles on the widget tree
+  // allowing both <special> and <bold> to be used without re-declaration.
+  // if you add a tag here that is already present on the DefaultTagStyles, 
+  // it will take  priority.
+  tags: {
+    'special': const TextSpanTag(style: TextStyle(color: Colors.pink)),
+  },
+);
+```
