@@ -10,8 +10,8 @@ import 'span_tags.dart';
 class DefaultTagStyles extends InheritedTheme {
   const DefaultTagStyles({
     super.key,
-    required super.child,
     required this.tags,
+    required super.child,
   });
 
   const DefaultTagStyles.fallback({super.key})
@@ -25,7 +25,7 @@ class DefaultTagStyles extends InheritedTheme {
   /// new instance, while maintaining the ancestors' as is.
   static Widget merge({
     Key? key,
-    Map<String, SpanTag>? tags,
+    required Map<String, SpanTag> tags,
     required Widget child,
   }) {
     return Builder(builder: (context) {
@@ -47,14 +47,10 @@ class DefaultTagStyles extends InheritedTheme {
 
   @override
   Widget wrap(BuildContext context, Widget child) {
-    final currentValues =
-        context.findAncestorWidgetOfExactType<DefaultTagStyles>();
-    return identical(this, currentValues)
+    final current = context.findAncestorWidgetOfExactType<DefaultTagStyles>();
+    return identical(this, current)
         ? child
-        : DefaultTagStyles(
-            tags: tags,
-            child: child,
-          );
+        : DefaultTagStyles(tags: tags, child: child);
   }
 
   @override
@@ -81,7 +77,7 @@ class _NullWidget extends StatelessWidget {
       'A $DefaultTagStyles constructed with '
       '$DefaultTagStyles.fallback cannot be incorporated into the '
       'widget tree, it is meant only to provide a fallback value returned by '
-      'TagTextStyleDefaultValues.of() when no enclosing default value is '
+      'DefaultTagStyles.of() when no enclosing default value is '
       'present in a BuildContext.',
     );
   }
