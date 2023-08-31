@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:tag_styled_text/src/utils.dart';
 
+import 'default_tag_styles.dart';
 import 'span_tag_builder.dart';
 import 'span_tags.dart';
 import 'tag_nodes.dart';
-import 'tag_text_style_default_values.dart';
 
 /// A [Text] that is capable of rendering a xml [text] into a tree
 /// of [InlineSpan]s.
