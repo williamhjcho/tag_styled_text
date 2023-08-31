@@ -13,8 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: subosito/flutter-action@v2.8.0
+      - uses: subosito/flutter-action@v2.10.0
         with:
+          cache: true
           flutter-version: '3.13.1'
       - name: Install Dependencies
         run: flutter packages get
@@ -26,3 +27,5 @@ jobs:
         run: flutter test --no-pub --coverage --test-randomize-ordering-seed random
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
