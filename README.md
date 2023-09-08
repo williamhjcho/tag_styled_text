@@ -1,6 +1,6 @@
-# [xml_styled_text](https://pub.dev/packages/tag_styled_text) package
+# [tag_styled_text](https://pub.dev/packages/tag_styled_text) package
 
-[![build](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml/badge.svg)](https://github.com/williamhjcho/xml_styled_text/actions/workflows/build.yaml) [![codecov](https://codecov.io/gh/williamhjcho/xml_styled_text/graph/badge.svg?token=9E7L28K3AV)](https://codecov.io/gh/williamhjcho/xml_styled_text)
+[![build](https://github.com/williamhjcho/tag_styled_text/actions/workflows/build.yaml/badge.svg)](https://github.com/williamhjcho/tag_styled_text/actions/workflows/build.yaml) [![codecov](https://codecov.io/gh/williamhjcho/tag_styled_text/graph/badge.svg?token=9E7L28K3AV)](https://codecov.io/gh/williamhjcho/tag_styled_text)
 
 Straightforward xml tag based (rich) styling on `Text` widgets
 
@@ -8,14 +8,14 @@ Straightforward xml tag based (rich) styling on `Text` widgets
 
 Add this library to your pubspec.yaml file by either running
 
-`flutter pub add xml_styled_text`
+`flutter pub add tag_styled_text`
 
 or by manually inserting
 
 ```yaml
 #(...)
 dependencies:
-  xml_styled_text: ^<desired version here>
+  tag_styled_text: ^<desired version here>
 #(...)
 ```
 
