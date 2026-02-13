@@ -1,6 +1,6 @@
 name: tag_styled_text
 description: Straightforward xml tag based (rich) styling on Text widgets
-version: 0.0.2
+version: 0.1.0
 homepage: https://github.com/williamhjcho/xml_styled_text
 repository: https://github.com/williamhjcho/xml_styled_text
 issue_tracker: https://github.com/williamhjcho/xml_styled_text/issues
