@@ -24,9 +24,10 @@ class TagStyledText extends StatefulWidget {
     this.locale,
     this.softWrap,
     this.overflow,
-    this.textScaleFactor,
+    this.textScaler,
     this.maxLines,
     this.semanticsLabel,
+    this.semanticsIdentifier,
     this.textWidthBasis,
     this.textHeightBehavior,
     this.selectionColor,
@@ -68,14 +69,17 @@ class TagStyledText extends StatefulWidget {
   /// {@macro flutter.widgets.text.overflow}
   final TextOverflow? overflow;
 
-  /// {@macro flutter.widgets.text.textScaleFactor}
-  final double? textScaleFactor;
+  /// {@macro flutter.painting.textPainter.textScaler}
+  final TextScaler? textScaler;
 
   /// {@macro flutter.widgets.text.maxLines}
   final int? maxLines;
 
   /// {@macro flutter.widgets.text.semanticsLabel}
   final String? semanticsLabel;
+
+  /// {@macro flutter.widgets.text.semanticsIdentifier}
+  final String? semanticsIdentifier;
 
   /// {@macro flutter.widgets.text.textWidthBasis}
   final TextWidthBasis? textWidthBasis;
@@ -129,7 +133,8 @@ class TagStyledTextState extends State<TagStyledText> {
       locale: widget.locale,
       softWrap: widget.softWrap,
       overflow: widget.overflow,
-      textScaleFactor: widget.textScaleFactor,
+      textScaler: widget.textScaler,
+      semanticsIdentifier: widget.semanticsIdentifier,
       maxLines: widget.maxLines,
       semanticsLabel: widget.semanticsLabel,
       textWidthBasis: widget.textWidthBasis,
