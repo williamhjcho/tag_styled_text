@@ -1,4 +1,4 @@
-library tag_styled_text;
+library;
 
 export 'src/default_tag_styles.dart';
 export 'src/span_tags.dart';
