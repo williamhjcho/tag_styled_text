@@ -6,20 +6,18 @@ repository: https://github.com/williamhjcho/xml_styled_text
 issue_tracker: https://github.com/williamhjcho/xml_styled_text/issues
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ^3.0.0
   flutter: ">=3.7.0"
 
 dependencies:
-  collection: ^1.17.1
   flutter:
     sdk: flutter
+  collection: ^1.17.1
   xml: ^6.1.0
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
-  meta: ^1.9.1
-  mocktail: ^1.0.0
-
-flutter:
+  meta: ^1.17.0
+  mocktail: ^1.0.4
