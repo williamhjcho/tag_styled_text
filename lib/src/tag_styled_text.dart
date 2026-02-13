@@ -42,7 +42,7 @@ class TagStyledText extends StatefulWidget {
   final String text;
 
   /// A collection of known [SpanTag]s that will be used when the
-  /// corresponding <tag> is matched.
+  /// corresponding `<tag>` is matched.
   ///
   /// Will be merged with [DefaultTagStyles], if any.
   final Map<String, SpanTag>? tags;

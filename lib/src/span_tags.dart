@@ -24,11 +24,11 @@ abstract class SpanTag {
   /// * [context] is from the current [TagStyledText] widget. It can be used
   ///   to access any context-aware resources from the widget tree.
   /// * [text] is an optional pure text that was found within the tags.
-  ///   (e.g. <tag>Some text</tag>)
+  ///   (e.g. `<tag>Some text</tag>`)
   /// * [children] are any nested tags that were parsed from the input,
   ///   descendants from **this**.
   /// * Any [attributes] that were given to the tag
-  ///   (e.g. <tag id="123" age="33">)
+  ///   (e.g. `<tag id="123" age="33">`)
   TagNode build(
     BuildContext context, {
     String? text,
