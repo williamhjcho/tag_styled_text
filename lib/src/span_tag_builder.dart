@@ -1,4 +1,3 @@
-import 'package:collection/collection.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/widgets.dart';
 import 'package:xml/xml.dart';
@@ -68,7 +67,7 @@ TagNode? _buildNodes(
   } else if (node.children.isNotEmpty) {
     children = node.children
         .map((child) => _buildNodes(context, child, tags))
-        .whereNotNull()
+        .nonNulls
         .toList();
   }
 

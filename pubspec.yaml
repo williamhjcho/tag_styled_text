@@ -12,7 +12,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  collection: ^1.17.1
   xml: ^6.1.0
 
 dev_dependencies:
