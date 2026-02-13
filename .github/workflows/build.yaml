@@ -13,18 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: subosito/flutter-action@v2.10.0
+      - uses: jdx/mise-action@v2
         with:
-          cache: true
-          flutter-version: '3.13.1'
+          version: 2025.10.21
       - name: Install Dependencies
-        run: flutter packages get
+        run: mise run setup
       - name: Format
-        run: dart format --set-exit-if-changed .
+        run: mise run format
       - name: Analyze
-        run: flutter analyze --no-pub
+        run: mise run lint
       - name: Run tests
-        run: flutter test --no-pub --coverage --test-randomize-ordering-seed random
+        run: mise run test
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         env:
