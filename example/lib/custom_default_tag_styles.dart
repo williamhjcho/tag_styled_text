@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:tag_styled_text/tag_styled_text.dart';
@@ -293,12 +291,13 @@ Color? _parseColor(String? value, ColorScheme colorScheme) {
     'onError' => colorScheme.onError,
     'errorContainer' => colorScheme.errorContainer,
     'onErrorContainer' => colorScheme.onErrorContainer,
-    'background' => colorScheme.background,
-    'onBackground' => colorScheme.onBackground,
     'surface' => colorScheme.surface,
     'onSurface' => colorScheme.onSurface,
-    'surfaceVariant' => colorScheme.surfaceVariant,
     'onSurfaceVariant' => colorScheme.onSurfaceVariant,
+    'surfaceContainerLowest' => colorScheme.surfaceContainerLowest,
+    'surfaceContainerLow' => colorScheme.surfaceContainerLow,
+    'surfaceContainerHigh' => colorScheme.surfaceContainerHigh,
+    'surfaceContainerHighest' => colorScheme.surfaceContainerHighest,
     'outline' => colorScheme.outline,
     'outlineVariant' => colorScheme.outlineVariant,
     'shadow' => colorScheme.shadow,
